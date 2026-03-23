@@ -1,12 +1,12 @@
 {
 	"name": "woocommerce/subscriptions-core",
 	"description": "Sell products and services with recurring payments in your WooCommerce Store.",
-	"homepage": "https://github.com/Automattic/woocommerce-subscriptions-core",
+	"homepage": "https://github.com/Ultimate-Multisite/woocommerce-subscriptions-core",
 	"type": "wordpress-plugin",
 	"license": "GPL-3.0-or-later",
 	"require": {
-		"php": "^7.1",
-		"composer/installers": "~1.2"
+		"php": ">=7.1",
+		"composer/installers": "^1.2 || ^2.2"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "9.5.14",
@@ -19,7 +19,7 @@
 			"bin/phpcs.sh"
 		],
 		"lint": [
-			"find . \\( -path ./vendor \\) -prune -o \\( -name '*.php' \\) -exec php -lf {} \\;| (! grep -v \"No syntax errors detected\" )"
+			"find . \\( -path ./vendor \\) -prune -o \\( -name \"*.php\" \\) -exec php -lf {} \\;| (! grep -v \"No syntax errors detected\" )"
 		],
 		"test": "phpunit"
 	},
@@ -27,9 +27,6 @@
 		"phpcodesniffer-search-depth": 2
 	},
 	"config": {
-		"platform": {
-			"php": "7.3"
-		},
 		"allow-plugins": {
 			"composer/installers": true,
 			"dealerdirect/phpcodesniffer-composer-installer": true
