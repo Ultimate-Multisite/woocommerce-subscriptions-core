@@ -94,7 +94,10 @@ class WCS_WC_Admin_Manager {
 			)
 		);
 
-		Menu::add_plugin_item( $subscription_items['all'] );
+		if ( is_array( $subscription_items ) && isset( $subscription_items['all'] ) ) {
+			Menu::add_plugin_item( $subscription_items['all'] );
+		}
+
 		Screen::register_post_type( 'shop_subscription' );
 	}
 }
