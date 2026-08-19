@@ -6,5 +6,6 @@
  * Author: Automattic
  * Author URI: https://woocommerce.com/
  * Requires WP: 5.6
+ * Tested up to: 7.1
  * Version: 8.2.0
  */
