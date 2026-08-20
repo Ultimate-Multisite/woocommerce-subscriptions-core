@@ -6,5 +6,9 @@
  * Author: Automattic
  * Author URI: https://woocommerce.com/
  * Requires WP: 5.6
- * Version: 8.2.0
+ * Version: 8.3.1
  */
+
+if ( ! defined( 'WOOCOMMERCE_SUBSCRIPTIONS_CORE_VERSION' ) ) {
+	define( 'WOOCOMMERCE_SUBSCRIPTIONS_CORE_VERSION', '8.3.1' );
+}
